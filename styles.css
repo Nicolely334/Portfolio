@@ -1,0 +1,554 @@
+@font-face {
+    font-family: Avenirnext-Regular;
+    src: url(./assets/font/5c9609935469cc3649bc6147_AvenirNext-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: Avenirnext-Bold;
+    src: url(./assets/font/5c960993de1743cd2f18d1bb_AvenirNext-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: Avenirnext-DemiBold;
+    src: url(./assets/font/5c960993e450bb22977909fe_AvenirNext-DemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: Avenirnext-Medium;
+    src: url(./assets/font/5c960993e450bb71497909ff_AvenirNext-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+body {
+    border: 1px solid black;
+    max-height: max-content;
+    max-width: 1920px;
+    overflow: visible;
+    display: block;
+    color: #1a1b1f;
+    max-width: 1920px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-top: 30px;
+    background-color: #fff;
+}
+
+a {
+    display: inline-block;
+    transition: opacity 200ms ease;
+    color: #1a1b1f;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+    z-index: 1;
+}
+
+.logo-name {
+    font-family: 'Avenirnext-Medium', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-names {
+    font-family: 'Avenirnext-Medium', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.name-link {
+    /*big name*/
+    background-image: linear-gradient(180deg, #fffaa3, #fffaa3);
+    font-weight: 550;
+    display: inline-block;
+    background-color: #fffaa3;
+    color: #1a1b1e;
+    text-decoration: none;
+}
+
+/*intro*/
+
+.intro-container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+}
+
+.caption-container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+}
+
+.heading-1 {
+    font-family: 'Avenirnext-DemiBold', sans-serif;
+    color:#1a1b1e;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+
+.intro-links {
+    border-radius: 0px;
+    opacity: 1;
+    color: #fff;
+    font-weight: 540;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.intro-caption-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+.heading-3 {
+    font-family: 'Avenirnext-Regular', sans-serif;
+    font-weight: 150px;
+}
+
+#program-intro-link:hover {
+    width: min-content;
+    background-color: #fc79ef80;
+    background-image: none;
+    text-shadow: none;
+    color: #191b1e;
+}
+
+#design-intro-link:hover {
+    background-color: #cefe9d;
+    background-image: none;
+    color: #191b1e;
+    text-shadow: none;
+}
+
+#draw-intro-link:hover {
+    background-image: none;
+    color: #191b1e;
+    background-color: #41d9ff80;
+    text-shadow: none;
+}
+
+/*footer*/
+
+.contact-me {
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #000;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.footer-text {
+    margin: 0;
+    font-family: 'Avenirnext-Regular', sans-serif;
+    color: rgba(255, 255, 255, 0.879);
+}
+
+.footer-line {
+    color: rgba(255, 255, 255, 0.819);
+
+}
+
+#github-username,
+#email,
+#handshake-name {
+    margin-left: 10px;
+    display: inline-flex
+}
+
+/*about me*/
+.abt-me-container {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.abt-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    font-family: "Avenirnext-Regular", sans-serif;
+}
+
+.col-2 {
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+#rect {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(255, 192, 203, 0.237);
+}
+
+.about-me-title {
+    font-family: "Avenirnext-DemiBold", sans-serif;
+}
+
+.abt-me-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#bodyp-1,
+#bodyp-2 {
+    font-family: "Avenirnext-Regular", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    /*1440 laptops*/
+
+    /*nav bar*/
+    .website-mobile {
+        display: none;
+    }
+
+    .website-desktop {
+        display: block;
+    }
+
+    .nav-names {
+        font-size: 14px;
+    }
+
+    .skills-name {
+        margin-left: 20px;
+    }
+
+    .logo-image {
+        margin-right: 15px;
+        width: 50px;
+    }
+
+    .container,
+    .footer-title {
+        max-width: 64%;
+    }
+
+    .menu {
+        column-gap: 27px;
+        align-content: flex-end;
+        display: flex;
+    }
+
+    /*gap */
+    .section {
+        height: 150px;
+    }
+
+    /*home page*/
+    .heading-1,
+    .intro-links,
+    .name-link  {
+        font-size: 56px;
+    }
+
+    .name-link {
+        line-height: 50px
+    }
+
+    #program-intro-link:hover,
+    #design-intro-link:hover,
+    #draw-intro-link:hover  {
+        line-height: 47px
+    }
+    
+    .intro-container,
+    .caption-container {
+        padding-bottom: 20px;
+    }
+
+    .caption-container {
+        line-height: 70px;
+    }
+
+    .heading-3 {
+        line-height: 25px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .section-2 {
+        height: 100px;
+    }
+
+    /*footer*/
+    .contact-me {
+        height: 250px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        height:min-content;
+        padding-top: 30px;
+    }
+
+    #github-logo,
+    #mail-logo,
+    #handshake-logo {
+        width: 20px
+    }
+
+    /*about me*/
+    .abt-me-container {
+        column-gap: 40px;
+        height: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .abt-me {
+        row-gap: 26px;
+    }
+
+    .bio {
+        font-size: 16px;
+        width: 340px;
+    }
+        
+    #rect {
+        top: -10px;
+        left: -30%;
+        width: calc(50% - 10px);
+        height: 150px;
+        background-color: rgba(255, 192, 203, 0.237);
+    }
+    
+    .about-me-title {
+        font-size: 56px;
+    }
+    
+    .abt-me-2 {
+        column-gap: 40px;
+        padding-bottom: 50px;
+    }
+    
+    #self-pic {
+        margin-left: -20px;
+        margin-top: -10px;
+        height: 200px;
+        width:260px;
+    }
+    
+    #bodyp-1,
+    #bodyp-2 {
+        font-size: 12px;
+    }
+    
+    #bodyp-1 {
+        width: 280px;
+    }
+    
+    #bodyp-2 {
+        width: 250px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    /*mobile*/
+
+    /*nav bar*/
+    .website-mobile {
+        display: block;
+    }
+
+    .website-desktop {
+        display: none;
+    }
+
+    .nav-names {
+        font-size: 14px;
+    }
+
+    .skills-name {
+        margin-left: 20px;
+    }
+
+    .logo-image {
+        margin-right: 15px;
+        width: 50px;
+    }
+
+    .container,
+    .footer-title {
+        max-width: 64%;
+    }
+
+    .menu {
+        column-gap: 27px;
+        align-content: flex-end;
+        display: flex;
+    }
+
+    /*gap */
+    .section {
+        height: 150px;
+    }
+
+    /*home page*/
+    .heading-1,
+    .intro-links,
+    .name-link  {
+        font-size: 56px;
+    }
+
+    .name-link {
+        line-height: 50px
+    }
+
+    #program-intro-link:hover,
+    #design-intro-link:hover,
+    #draw-intro-link:hover  {
+        line-height: 47px
+    }
+    
+    .intro-container,
+    .caption-container {
+        padding-bottom: 20px;
+    }
+
+    .caption-container {
+        line-height: 70px;
+    }
+
+    .heading-3 {
+        line-height: 25px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .section-2 {
+        height: 100px;
+    }
+
+    /*footer*/
+    .contact-me {
+        height: 250px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        height:min-content;
+        padding-top: 30px;
+    }
+
+    #github-logo,
+    #mail-logo,
+    #handshake-logo {
+        width: 20px
+    }
+
+    /*about me*/
+    .abt-me-container {
+        column-gap: 40px;
+        height: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .abt-me {
+        row-gap: 26px;
+    }
+
+    .bio {
+        font-size: 16px;
+        width: 340px;
+    }
+        
+    #rect {
+        top: -10px;
+        left: -30%;
+        width: calc(50% - 10px);
+        height: 150px;
+        background-color: rgba(255, 192, 203, 0.237);
+    }
+    
+    .about-me-title {
+        font-size: 56px;
+    }
+    
+    .abt-me-2 {
+        column-gap: 40px;
+        padding-bottom: 50px;
+    }
+    
+    #self-pic {
+        left: 10px;
+        position: relative;
+        margin-top: -10px;
+        width:300px;
+    }
+    
+    #bodyp-1,
+    #bodyp-2 {
+        font-size: 12px;
+    }
+    
+    #bodyp-1 {
+        width: 280px;
+    }
+    
+    #bodyp-2 {
+        width: 250px;
+    }
+    
+}
