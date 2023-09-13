@@ -11,9 +11,10 @@
       href="./styles.css"
     />
 </head>
-<body>
+
+<body id="index">
   <div class="container">
-    <div class="website_desktop">
+    <div class="website-desktop">
       <div class="nav-container">
         <div class="logo">
           <img class="logo-image" src="./assets/images/smiski.png">
@@ -28,7 +29,7 @@
           <a href="./public/about.html" class="nav-link">
             <div class="nav-names">ABOUT ME</div>
           </a>
-          <a href="./assets/Nicole Ly - Resume.pdf" dowload="Nicole_Ly_Resume.pdf" class="nav-link">
+          <a href="./assets/Nicole Ly - Resume.pdf" download="Nicole_Ly_Resume.pdf" class="nav-link">
             <div class="nav-names">RESUME</div>
           </a>
         </div>
@@ -36,10 +37,28 @@
     </div>
     <div class="website-mobile">
       <div class="nav-container">
-        <a href="./index.html" class="nav-link">
-          <div class="logo-name">NICOLE LY</div>
-        </a>
-        <img id = "menu-icon" src="./assets/images/5c80ff17b78f1395faa9d112_menu-icon.png">
+        <div class="logo">
+          <a href="./index.html" class="nav-link">
+            <div class="nav-names">NICOLE LY</div>
+          </a>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+              <img id="menu-icon" src="./assets/images/5c80ff17b78f1395faa9d112_menu-icon.png">
+          </div>
+          <div class="dropdown-content" id="menu-content">
+              <a href="./index.html" class="nav-link">
+                <div class="nav-names">HOME</div>
+              </a>
+              <a href="./public/about.html" class="nav-link">
+                <div class="nav-names">ABOUT ME</div>
+              </a>
+              <a href="./assets/Nicole Ly - Resume.pdf" download="Nicole_Ly_Resume.pdf" class="nav-link">
+                <div class="nav-names">RESUME</div>
+              </a>
+          </div>
+      </div>
+      <script src="./script.js"></script>
       </div>
     </div>
     <div class="section"></div>
@@ -73,17 +92,17 @@
   <div class="contact-me">
     <div class="footer-title">
       <div class="footer-text">CONTACT ME</div>
-      <hr size="1px" width="100%" color="white">
+      <hr size="1px" width="100%" color="#FFFFFF">
       <div class="footer">
-        <a src = "https://github.com/Nicolely334">
+        <a href = "https://github.com/Nicolely334">
           <img id = "github-logo" src="./assets/images/icons8-github-30.png">
           <div id="github-username">nnicolely334</div>
         </a>
-        <a src="mailto:nnicolely334@gmail.com">
+        <a href="mailto:nnicolely334@gmail.com">
           <img id = "mail-logo" src="./assets/images/icons8-gmail-logo-30.png">
           <div id="email">nnicolely334@gmail.com</div>
         </a>
-        <a src="https://uci.joinhandshake.com/stu/users/44420046">
+        <a href="https://uci.joinhandshake.com/stu/users/44420046">
           <img id="handshake-logo" src="./assets/images/handshake-logo.png">
           <div id="handshake-name">Nicole Ly</div>
         </a>
