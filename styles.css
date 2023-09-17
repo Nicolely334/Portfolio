@@ -30,10 +30,15 @@
     font-display: auto;
 }
 
+html, body {
+    overflow-y: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     height: max-content;
     max-width: 1920px;
-    overflow: visible;
     display: block;
     color: #1a1b1f;
     font-size: 16px;
@@ -406,11 +411,7 @@ a {
 
 @media only screen and (max-width: 767px) {
     /*mobile*/
-
-    .html, .body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
+      
     .website-mobile {
         display: block;
     }
@@ -447,7 +448,7 @@ a {
         right: 0%;
         background-color: #f1f1f1;
         min-width: 140px;
-        z-index: 1;
+        z-index: 2;
     }
     
     .dropdown-content a {
