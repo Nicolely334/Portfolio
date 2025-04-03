@@ -1,3 +1,3 @@
-Nicole's portfolio
+My portfolio
 
-My first project!
+https://nicolely334.github.io/Portfolio/
